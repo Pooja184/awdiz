@@ -1,0 +1,23 @@
+.container{
+    display:flex;
+    /* background-color: aquamarine; */
+    height: 150px;
+    gap: 40px;
+    /* justify-content: space-between; */
+}
+
+h2{
+    text-align: center;
+}
+.container > div{
+    flex-grow: 1;
+    background-color: palevioletred;
+    text-align: center;
+    
+}
+
+.container >div:nth-child(2){
+    /* background-color: antiquewhite; */
+    flex-grow: 2;
+    /* align-self: flex-end; */
+}
