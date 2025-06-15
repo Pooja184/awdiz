@@ -4,40 +4,160 @@
     padding: 0;
 }
 
+/* Header style */
 #header{
     height: 70px;
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 #logo{
     width: 15%;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     font-weight: bold;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 #navigation{
     display: flex;
     width: 40%;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 #profile{
     width: 35%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#search{
-    width: 20%;
-    border: 2px solid rebeccapurple;
+#menuBar{
+    display: none;
 }
+#search{
+    width: 28%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 .searchIcon{
-    width: 25px;
-    height: 25px ;
+    display: none;
+}
+#search > input{
+    width: 90px;
+    padding: 5px 8px;
+    border: none;
+    outline: none;
+}
+
+#login{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header style end */
+
+#body{
+    width: 85%;
+    height: 600px; /* or any fixed height */
+    background-image: url("./Hero.jpg");
+     margin: auto;
+    background-size: cover; 
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#rightSide{
+    width: 45%;
+    /* border:1px solid red; */
+}
+#rightSide > h2{
+    font-size: 60px;
+}
+#rightSide > p{
+    font-size: 30px;
+    
+}
+
+#leftSide{
+    /* border:1px solid red; */
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#leftImg{
+    height: 400px;
+    width: 70%;
+    background-color: white;
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+#leftImg > img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#leftImg > p{
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+#leftImg > button{
+    padding: 10px 12px;
+    background-color:#1570c3;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+@media (min-width:320px) and (max-width:720px) {
+    /* Header style start */
+    #navigation{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    #login > p{
+        display: none;
+    }
+    #profile{
+        width: 55%;
+        /* border:1px solid black; */
+       
+    }  
+    .searchIcon{
+        display: block;
+    }
+    #menuBar{
+        display: block;
+    }
+    /* Header style end */
 }
