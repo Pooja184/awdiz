@@ -72,13 +72,17 @@
 
 /* Header style end */
 
+/* body style start */
 #body{
     width: 85%;
+
     height: 600px; /* or any fixed height */
     background-image: url("./Hero.jpg");
      margin: auto;
     background-size: cover; 
+    
     /* border: 1px solid red; */
+    background-repeat: no-repeat;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -136,6 +140,108 @@
     border: none;
     border-radius: 8px;
 }
+#leftSidebtm{
+    display: none;
+}
+/* body style end */
+
+/*body bottom start  */
+#bodyBottom{
+    height: 500px;
+    width: 85%;
+    /* border: 2px solid red; */
+    margin:auto;
+    margin-top: 20px;
+}
+#descriptions{
+    display: flex;
+    justify-content: space-between;
+
+}
+#descriptions > p{
+    font-size: 30px;
+    /* border: 2px solid yellow; */
+    margin-top: 40px;
+}
+#descriptions > h3{
+    font-size: 20px;
+    /* border: 2px solid yellow; */
+    margin-top: 40px;
+}
+
+#bodyBtmCollection{
+     width: 100%;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+#bodyBtmImg{
+    height: 400px;
+    width: 70%;
+    background-color: white;
+    /* border: 1px solid red; */
+    padding: 10px;
+    border-radius: 15px;
+}
+#bodyBtmImg > img{
+     height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#footer{
+     width: 85%;
+    height: 600px; /* or any fixed height */
+     margin: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 40px; */
+}
+
+
+#rightSideFooter{
+    width: 50%;
+    margin: auto;
+    /* border:1px solid red; */
+}
+#rightSideFooter > h2{
+    font-size: 60px;
+}
+#rightSideFooter > p{
+    font-size: 20px;  
+}
+
+#rightSideFooter > button{
+    font-size: 15px;
+    padding: 10px 12px;
+    background-color:#1570c3;
+    outline: none;
+    border: none;
+    border-radius: 10px;  
+    margin-top: 40px;
+}
+
+#leftSideFooter{
+    /* border:1px solid red; */
+    /* height: 400px; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+ #leftSideFooter > img{
+    height: 580px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} 
+
 
 @media (min-width:320px) and (max-width:720px) {
     /* Header style start */
@@ -160,4 +266,152 @@
         display: block;
     }
     /* Header style end */
+
+    /* body style start */
+    #leftSide{
+        display: none;
+    }
+
+    #body{
+        padding: 30px;
+        height: 550px;
+        object-fit: cover;
+    }
+    #rightSide{
+        width: 80%;
+    }
+    #rightSide > h2{
+        font-size: 40px;
+    }
+    #rightSide > p{
+        font-size: 20px;  
+    }
+    /*----------- bottom shoes style start--------*/
+    #leftSidebtm{
+        display: block;
+        padding: 20px;
+        margin: 7px;
+       
+    }
+    #leftImgbtm{
+    height: 400px;
+    width: 100%;
+     background-color: #f0f0f0;
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+    #leftImgbtm > img{
+        background-color: #e4e3df;
+        /* border: 2px solid red; */
+        height: 250px;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    #leftImgbtm > button{
+        width: 100%;
+        padding: 10px 12px;
+        margin-top: 15px;
+        background-color:#1570c3;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+    }
+    #leftImgbtm > .p{
+        font-weight: bold;
+        font-size: 17px;
+    }
+   /*----------- bottom shoes style end--------*/
+
+   /*----------- bottom multiple shoes style start--------*/
+
+   #descriptions > p{
+        font-size: 20px;
+        margin: 10px;
+   }
+
+    #descriptions > h3{
+        font-size: 15px;
+        margin: 10px;
+   }
+
+   #bodyBtmCollection{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+   }
+
+   #bodyBtmImg{
+    height: 250px;
+    width: 50%;
+    background-color: white;
+    /* border: 1px solid red; */
+    padding: 10px;
+    border-radius: 15px;
+   }
+
+   #bodyBtmImg > img{
+     height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+   /*----------- bottom multiple shoes style end--------*/
+
+   #footer{
+     width: 85%;
+    height: 400px; /* or any fixed height */
+     margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* padding: 40px; */
+}
+
+   
+#rightSideFooter{
+    width: 100%;
+    margin-bottom: 30px;
+    /* margin: auto; */
+    /* border:1px solid red; */
+}
+#rightSideFooter > h2{
+    font-size: 30px;
+    font-weight:lighter;
+}
+#rightSideFooter > p{
+    font-size: 15px;  
+}
+
+#rightSideFooter > button{
+    font-size: 15px;
+    padding: 10px 12px;
+    background-color:#1570c3;
+    outline: none;
+    border: none;
+    border-radius: 10px;  
+    margin-top: 20px;
+}
+
+#leftSideFooter{
+    /* border:1px solid red; */
+    /* height: 400px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+ #leftSideFooter > img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} 
 }
